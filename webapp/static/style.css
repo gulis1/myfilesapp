@@ -1,0 +1,71 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center container */
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Headings */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Inputs */
+input[type=text], input[type=password], input[type=file] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 8px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    background-color: #2575fc;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1a5ed8;
+}
+
+/* Links */
+a {
+    color: #2575fc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* File list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+}
+

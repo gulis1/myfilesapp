@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; padding: 20px; }
+    h2 { color: #333; }
+    ul { list-style-type: none; padding: 0; }
+    li { margin: 5px 0; }
+    a { text-decoration: none; color: #1a73e8; }
+    a:hover { text-decoration: underline; }
+    input[type=file] { padding: 5px; }
+    button { padding: 6px 12px; margin-top: 5px; }
+    .container { max-width: 600px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Welcome {{ username }}</h2>
+
+    <h3>Your files</h3>
+    <ul>
+      {% for file in files %}
+        <li>
+            <a
+              href="#"
+              target="_blank"
+              onclick="this.href = location.protocol + '//' + location.hostname + ':30080/{{ username }}/{{ file }}'">
+                {{ file }}
+            </a>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <h3>Upload a file</h3>
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" name="file">
+      <button type="submit">Upload</button>
+    </form>
+
+    <br>
+    <a href="/logout">Logout</a>
+  </div>
+</body>
+</html>
+
