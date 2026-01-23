@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ???
+metadata:
+  name: ???
+spec:
+  containers:
+  - name: nginx
+    image: ???
+    ports:
+    - containerPort: 9999
