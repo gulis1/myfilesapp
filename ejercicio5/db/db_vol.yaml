@@ -1,7 +1,0 @@
-# PVC para DB
-apiVersion: v1
-kind: ???
-metadata:
-  name: pg-data
-spec: ??? # Rellenar todo
-
